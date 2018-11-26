@@ -6,20 +6,25 @@
     <script tupe="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script tupe="text/javascript">
       $(function(){
-        $("h").css("color","bule");
-        $("#toggle").on("click",function(){
-          $("#target").fadeToggle("slow");
-        });
-      });
-      $("button").click(function(){
-        $("h").toggle("show");
+       $("div:hidden:first").fadeIn("show");
       });
     </script>
+    <style>
+       span { color:red; cursor:pointer; }
+  div { margin:3px; width:80px; display:none;
+        height:80px; float:left; }
+  div#one { background:#f00; }
+  div#two { background:#0f0; }
+  div#three { background:#00f; }
+    </style>
   </head>
   <body>
-    <h>こんにちは！</h>
-  <div id="target">表示,非表示される要素</div>
-  <button id="toggle">切り替え</button>
+    <span>Click</span>
+    
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div> 
+
   </body>
 </html>
 

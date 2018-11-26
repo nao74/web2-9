@@ -11,6 +11,10 @@
           $("div:hidden:first").fadeIn("show");
       });
         
+        $("div").click(function(){
+          $("div").fadeOut("slow");
+        });
+        
       });
     </script>
     <style>
@@ -23,8 +27,7 @@
     </style>
   </head>
   <body>
-    <span>Click</span>
-    
+    <span>Open</span>
     <div id="one"></div>
     <div id="two"></div>
     <div id="three"></div> 

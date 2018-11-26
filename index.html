@@ -6,18 +6,18 @@
     <script tupe="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script tupe="text/javascript">
       $(function(){
-        $("s").css("color","bule");
+        $("h").css("color","bule");
         $("#toggle").on("click",function(){
           $("#target").fadeToggle("slow");
         });
       });
       $("button").click(function(){
-        $("s").toggle("show");
+        $("h").toggle("show");
       });
     </script>
   </head>
   <body>
-    <s>こんにちは！</s>
+    <h>こんにちは！</h>
   <div id="target">表示,非表示される要素</div>
   <button id="toggle">切り替え</button>
   </body>
